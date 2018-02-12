@@ -1,26 +1,53 @@
 @import "uikit.min";
 @import "mediaplayer.min";
 
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 
 // headline
 
-h1 {
-  text-transform: uppercase;
-}
-
-.char1 {
-  color: orange;
-}
-
-.char7 {
-  color: green;
-}
-
 // SPECIFICITY
 // score key: inlines, pound, dots, elements
-// score: 0, 0, 0, 2
+// score: 0, 0, 0, 0
 
-body h1, article p {
-  font-family: 'Lobster', cursive;
+html {
+  background: #bc6d6d;
+}
+
+ul {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, p {
+  color: #fff;
+}
+
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+  margin-top: 50px;
+}
+
+div.uk-slideshow{
+  position:relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.arrow{
+ position:absolute; 
+}
+
+.right{
+  left:100px;
+  top:100px;
+}
+ 
+.left{
+  left:100px;
+  top:100px;
+}
+
+figcaption {
+ color: #fff;
+ border: 1px solid red;
 }
